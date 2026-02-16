@@ -36,15 +36,16 @@ Simply double-click `ExportBookMark.bat` and the script will run automatically.
 powershell.exe -ExecutionPolicy Bypass -NoProfile -File .\ExportBookMarks.ps1 .
 
 ## 📁 Output
-The script creates the following in C:\Temp\bookmarkexport27\:
-|----------------------------------------|----------------------------------------|
-|File                                    |     Description                        |
-|Chrome_Bookmarks_YYYYMMDD.csv	        |     Bookmarks from all Chrome profiles |
-|Edge_Bookmarks_YYYYMMDD.csv	           |     Bookmarks from all Edge profiles   |
-|Firefox_Bookmarks_YYYYMMDD.csv	        |     Bookmarks from Firefox             |
-|InternetExplorer_Bookmarks_YYYYMMDD.csv |	  Internet Explorer favorites        |
-|BookmarkExport_YYYYMMDD_HHmmss.log  	  |     Detailed execution log .           |
-|----------------------------------------|----------------------------------------|
+
+The script creates the following in `C:\Temp\bookmarkexport27\`:
+
+| File | Description |
+|------|-------------|
+| `Chrome_Bookmarks_YYYYMMDD.csv` | Bookmarks from all Chrome profiles |
+| `Edge_Bookmarks_YYYYMMDD.csv` | Bookmarks from all Edge profiles |
+| `Firefox_Bookmarks_YYYYMMDD.csv` | Bookmarks from Firefox |
+| `InternetExplorer_Bookmarks_YYYYMMDD.csv` | Internet Explorer favorites |
+| `BookmarkExport_YYYYMMDD_HHmmss.log` | Detailed execution log |
 
 CSV Format
 Each CSV file contains:
@@ -57,12 +58,16 @@ Browser: Source browser and profile
 ExportDate: When the export was performed .
 
 ## 🔍 Browser Support Details
-Browser	            Support Level	  Method
-Chrome	            ✅ Full	        Reads Bookmarks JSON file
-Edge	              ✅ Full	        Reads Bookmarks JSON file
-Firefox	            ✅ Full	        SQLite query via sqlite3.exe
-Internet Explorer	  ✅ Full	        Parses .url files in Favorites folder
-Brave/Opera/Vivaldi	❌              Not supported. Planned for future versions .
+
+| Browser | Support Level | Method |
+|---------|--------------|--------|
+| **Chrome** | ✅ Full Support | Reads Bookmarks JSON file |
+| **Edge** | ✅ Full Support | Reads Bookmarks JSON file |
+| **Firefox** | ✅ Full Support | SQLite query via sqlite3.exe |
+| **Internet Explorer** | ✅ Full Support | Parses .url files in Favorites folder |
+| *Brave* | ❌ Not Supported | Planned for future version |
+| *Opera* | ❌ Not Supported | Planned for future version |
+| *Vivaldi* | ❌ Not Supported | Planned for future version |
 
 ## Troubleshooting
 Firefox not exporting?
