@@ -1,0 +1,45 @@
+
+# Output directories - DON'T version control exported data
+C:/Temp/bookmarkexport/
+C:/Temp/bookmarkexport27/
+/Temp/
+/output/
+/Results/
+/Results27/
+
+# Exported data files
+*.csv
+*.log
+*.txt
+
+# Temporary files
+*.tmp
+*.temp
+*~
+*.swp
+*.swo
+*.bak
+
+# SQLite database files (temp copies)
+*.sqlite
+places_*.sqlite
+
+# PowerShell temporary files
+*.ps1~
+*.ps1.bak
+
+# Windows specific
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# User-specific files
+*.user
+*.user.config
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Note about sqlite3.exe - we WANT to keep this in repo
+# So DON'T add sqlite3.exe to gitignore
