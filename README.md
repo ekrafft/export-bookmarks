@@ -37,12 +37,14 @@ powershell.exe -ExecutionPolicy Bypass -NoProfile -File .\ExportBookMarks.ps1 .
 
 ## 📁 Output
 The script creates the following in C:\Temp\bookmarkexport27\:
-File                                      Description
-Chrome_Bookmarks_YYYYMMDD.csv	            Bookmarks from all Chrome profiles
-Edge_Bookmarks_YYYYMMDD.csv	              Bookmarks from all Edge profiles
-Firefox_Bookmarks_YYYYMMDD.csv	          Bookmarks from Firefox
-InternetExplorer_Bookmarks_YYYYMMDD.csv	  Internet Explorer favorites
-BookmarkExport_YYYYMMDD_HHmmss.log	      Detailed execution log .
+|----------------------------------------|----------------------------------------|
+|File                                    |     Description                        |
+|Chrome_Bookmarks_YYYYMMDD.csv	        |     Bookmarks from all Chrome profiles |
+|Edge_Bookmarks_YYYYMMDD.csv	           |     Bookmarks from all Edge profiles   |
+|Firefox_Bookmarks_YYYYMMDD.csv	        |     Bookmarks from Firefox             |
+|InternetExplorer_Bookmarks_YYYYMMDD.csv |	  Internet Explorer favorites        |
+|BookmarkExport_YYYYMMDD_HHmmss.log  	  |     Detailed execution log .           |
+|----------------------------------------|----------------------------------------|
 
 CSV Format
 Each CSV file contains:
